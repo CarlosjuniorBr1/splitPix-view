@@ -1,0 +1,65 @@
+/* Garante que a sidebar e o conteúdo se ajustem corretamente */
+.container {
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidenav {
+    width: 250px;
+    background: #1e1e2d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabeçalho da Sidebar */
+  .sidenav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #141422;
+  }
+  
+  /* Botão de fechar dentro da sidebar */
+  .close-btn {
+    color: white;
+  }
+  
+  /* Itens do menu */
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .nav-item mat-icon {
+    color: white;
+  }
+  
+  /* Fundo do conteúdo */
+  .content {
+    padding: 20px;
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Botão fixo de abrir a sidebar */
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
